@@ -31,187 +31,6 @@ client.on('message', msg => { //Kanala mesaj yeri
         "\n!hammer" +
         "\nhatchet```" );
     }
-    if (msg.content.toLowerCase() === '!int') {
-        msg.channel.send('```***Intelligence***'+
-        '\nÖzellik Bonusları' +
-        '\n50 INT Puanı verdiğiniz zaman:'+
-        '\nHafif ve Ağır Magic (Büyü) saldırlarının hasarını +10% artırır'+ 
-        '\nBitki toplama hızını +%10 artırır.'+
-        '\n100 INT Puanı verdiğiniz zaman:'+
-        '\nCritical (Kritik) vuruş hasarını +10% artırır.'+ 
-        '\nBitki toplarken 1 Azoth kazanma şansınızı +5% artırır'+
-        '\n150 INT Puanı verdiğiniz zaman:'+ 
-        '\nElemental hasarınızı +15% artırır.'+
-        '\nBitki toplarken kazandığınız malzemenin ağırlığını -10% düşürür.'+
-        '\n200 INT Puanı verdiğinizde:'+
-        '\nHer dodge sonrasında +10 Mana kazanırsınız.'+ 
-        '\nBitki yoplama hızını +10% artırır.'+
-        '\n250 INT Puanı verdiğiniz zaman:'+
-        '\nZamana bağlı hasar vuran büyü skillerinizin aktiflik süresini +30% artırır.'+
-        '\nBitki toplarken +10% fazladan materyal elde etmenizi sağlar.'+
-        '\n300 INT Puanı verdiğiniz zaman:'+
-        '\nCanı 100% olan hedeflere ilk vuruşunuz +10% hasar verir.'+
-        '\nAzoth seyahat maliyetinde -10% azalma```');
-    }
-    if (msg.content.toLowerCase() === '!dex') {
-        msg.channel.send('```***DEXTERITY***' +
-        "\nÖzellik Bonusları " +
-        "\n50 DEX Puanı verdiğiniz zaman:" +
-        "\nHedefe +5% şans ile kritik vuruş sağlar." +
-        "\nDeri toplama hızını +10% artırır. " +
-        "\n100 DEX Puanı verdiğiniz zaman: " +
-        "\nThrust hasarını +5% artırır. " +
-        "\nDeri topladıktan sonraki 3 saniye boyunca +20% hareket hız kazanırısınız." +
-        "\n150 DEX Puanı verdiğiniz zaman: " +
-        "\nDodge (Saldırıdan Kaçınma) özelliği kullandığınızda -10 daha az stamina harcar. " +
-        "\nToplanan derilerin ağırlığını -10% azaltır " +
-        "\n200 DEX Puanı verdiğinizde:" +
-        "\nArkadan ve Kafadan darbelerde +10% fazla hasar meydana gelir. " +
-        "\nDeri toplama hızını +10% artırır. " +
-        "\n250 DEX Puanı verdiğiniz zaman: " +
-        "\nSersemlemiş, yavaşlatılmış veya yerdeki düşmanlara karşı yapılan kritik saldırı hasarını +10% artırır."+
-        "\n300 DEX Puanı verdiğiniz zaman " +
-        "\nHer başarılı dodgeden sonra kesin kritik vurmannızı sağlar bu etki her 10 sn bir tekrar eder. \nKullanılan cephaneyi +15% şans ile geri kazanırınız.```");
-    }
-    if (msg.content.toLowerCase() === '!str') {
-        msg.channel.send("```***STRENGTH*** " +
-        "\nÖzellik Bonusları " +
-        "\n50 STR Puanı verdiğiniz zaman:" +
-        "\nMele silahlarla yapacağınız Hafif (Light) saldırılar sırasında +5% hasar artışı kazanır." +
-        "\nMaden toplama hızınızı +10 artar. " +
-        "\n100 STR Puanı verdiğiniz zaman: " +
-        "\nMele silahlarla yapacağınız Ağır (Heavy) saldırılar sırasında +10% hasar artışı kazanır. " +
-        "\nTaşıma kapasitebizi +20 eklenir." +
-        "\n150 STR Puanı verdiğiniz zaman: " +
-        "\nMele silahlarla yaptığınız saldırlar düşmanın +50% daha fazla stamina kaybetmesini sağlar. " +
-        "\nMaden materyallerinin taşınma ağırlıklarını -10% oranında azaltır " +
-        "\n200 STR Puanı verdiğinizde:" +
-        "\nSersemlemiş, yavaşlatılmış veya yerdeki düşmanlara karşı yapılan kritik saldırı hasarını +10% artırır." +
-        "\nMaden toplama hızınız +10% artar." +
-        "\n250 STR Puanı verdiğiniz zaman: " +
-        "\nMele silahlar ile yapacağınız hafif ve ağır saldırlar esnasında stamina kazancı sağlanır." +
-        "\nMaden toplarken +10% fazladan materyal elde etmenizi sağlar."+
-        "\n300 STR Puanı verdiğiniz zaman " +
-        "\nMele silahlarla yapacağınız hafif ve ağır saldırların düşman tarafından bozulmamasını sağlar. " +
-        "\nTüm madenleri +25% şansla tek kazma vuruşunda toplama şansı sağlar```");
-    }
-    if (msg.content.toLowerCase() === '!foc') {
-        msg.channel.send("```***FOCUS*** " +
-        "\nÖzellik Bonusları " +
-        "\n50 FOC Puanı verdiğiniz zaman:" +
-        "\nMana yenileme oranını +10% artırır." +
-        "\nBalıkçılık yapaılırken orta gerginliği +10% artış sağlanır." +
-        "\n100 FOC Puanı verdiğiniz zaman: " +
-        "\nToplam mana kapasitesi +20 artar" +
-        "\nMateryal parçalama (Salvage) esanasında elde edilen malzeme miktarını +10% artırır." +
-        "\n150 FOV Puanı verdiğiniz zaman: " +
-        "\nYapılan heal oranını +20% artırır." +
-        "\nBalıkçılıktan elde edilen materyallerin ağırlığını -10% azaltır." +
-        "\n200 FOC Puanı verdiğinizde:" +
-        "\nVerilen güçlendirme (BUFF) etkilerin süresini +20% artırır." +
-        "\nBalıkçılık yapaılırken orta gerginliği +10% artış sağlanır." +
-        "\n250 FOC Puanı verdiğiniz zaman: " +
-        "\nKişisel veya grup üyelerinden herhangi biri bir düşman öldürdüğünde +30 mana kazandırır." +
-        "\nYakalanan balık kazancını +10% artırır." +
-        "\n300 FOC Puanı verdiğiniz zaman " +
-        "\nMana sıfıra ulaştığında mana yenilenmesi 10 saniyeliğine +200% artar (60sn bekeme süresi)" +
-        "\nHızlı seyehat yöntemlerinden biri olan şehirdeki Han evlerine dönüş beklme süresini +10% azaltır```");
-    }
-    if (msg.content.toLowerCase() === '!cons') {
-        msg.channel.send("```***CONSTITUTION*** " +
-        "\nÖzellik Bonusları " +
-        "\n50 CON Puanı verdiğiniz zaman:" +
-        "\nTüketilebilen bütün sağlık eşyaları etkisi +20% artar." +
-        "\nOdunculuk hızını +10% artırır." +
-        "\n100 CON Puanı verdiğiniz zaman: " +
-        "\nMaximum canınız fiziksel zırhınızın +10% kadar artar." +
-        "\nToplayılıcılık aletlerindeki dayanıklılık +10% artırır." +
-        "\n150 CON Puanı verdiğiniz zaman: " +
-        "\nKritik hasar alınımını karşı %10 dayanaklılık artar." +
-        "\nOdunculuk elde edilen malzemelerin ağırlığını -10% azaltır." +
-        "\n200 CON Puanı verdiğinizde:" +
-        "\nZırhınızı +20% artırır." +
-        "\nOdunculuk ağaç kesme hızınızı +10% artar." +
-        "\n250 CON Puanı verdiğiniz zaman: " +
-        "\nCanınız tamamen dolu iken aldığınız hasar +80% azaltır." +
-        "\nOdunculuktan elde edilen materyalleri +10% arttırır." +
-        "\n300 FOC Puanı verdiğiniz zaman " +
-        "\nSersemleme, yavaşlatma, bağlama büyülerinin süresini %20 artırır. tek vuruşta bir ağacı kesme şansını %25 artırır.```");
-    }
-    if (msg.content.toLowerCase() === '!weaponggems') {
-        msg.channel.send("```Abbysal: Silahın temel hasarı veya INT te bakılarak hangisi yüksek ise hasarın (T1)20% , (T2)30% (T3)40% (T4)50% Void hasara dönüştürür.```" +
-        "\n```Arboreal: Silahın temel hasarı veya FOCUS ta bakılarak hanfisi yüksek ise hasarın (T1)20% , (T2)30% (T3)40% (T4)50% Nature hasara dönüştürür.```" +
-        "\n```Brash: Canı tam olan hedeflere karşı (T1)15% , (T2)20% (T3)25% (T4)30% hasar artışı sağlar.```" +
-        "\n```Calming (T1)-4% , (T2)-6% (T3)-8% (T4)-10% daha az tehdit oluşturursunuz.```" +
-        "\n```Cruel: Yavaşlatılmış, sersemletilmiş veya sabitlenmiş düşmanlara karşı (T1)6% , (T2)8% (T3)10% (T4)12%```" +
-        "\n```Electrified: Silahın temel hasarı veya INT'te bakılarak hangisi yüksek ise hasarın (T1)20% , (T2)30% (T3)40% (T4)50% Ligtning hasara dönüştürür.```" +
-        "\n```Exhilarete: Eğer canınız 30% altındaysa (T1)12% , (T2)16% (T3)20% (T4)24% hasarınız artar.```" +
-        "\n```Frozen: Silahın temel hasarı veya INT'te bakılarak hangisi yüksek ise hasarın (T1)20% , (T2)30% (T3)40% (T4)50% Ice hasara dönüştürür.```" +
-        "\n```Gambit: Staminanız dolu değilse (T1)+6% , (T2)+9% (T3)+12% (T4)+15% hasar artışı kazanırsınız.```" +
-        "\n```Ignited: Silahın temel hasarı veya INT'te bakılarak hangisi yüksek ise hasarın (T1)20% , (T2)30% (T3)40% (T4)50% FIRE hasara dönüştürür.```" +
-        "\n```Lucky: (T1)+0.25% , (T2)+0.35% (T3)0.45% (T4)5% Sandıklardan ve canavarlardan nadir eşyalar düşme şansını artırır.```" +
-        "\n```Opportunist: Eğer düşmanlarınızın canı %30 dan daha az ise (T1)+8% , (T2)+12% (T3)+16% (T4)200% daha fazla hasar vurmanızı sağlar.```" +
-        "\n```Rally: eğer canınız full ise (T1)+6% , (T2)+9% (T3)+12% (T4)+15% dostlarınızı iyileştirme artışı ve hasar artışı kazanırsınız.```" +
-        "\n```Rataliate: Düşman tarafından 3 vuruş aldıktan sonra (T1)+6% , (T2)+9% (T3)+12% (T4)+15% oranda hasar artışı kazanırınız.```" +
-        "\n```Taunting: Taunt aktif iken (T1)100% , (T2)200% (T3)250% (T4)300% düşmanlarınıza tehdit oluştururusnuz.```");
-    }
-    if (msg.content.toLowerCase() === '!armorgems') {
-        msg.channel.send("```Abyssal Ward:(T1)+2.5% , (T2)+3.5% (T3)+5.0% (T4)+6.0% Void (Hiçlik) Hasarı Emilimi.```" +
-        "\n```Arcane Ward: (T1)+2.0% , (T2)+2.5% (T3)3.0% (T4)3.75% Arcane (Gizemli) Hasarı Emilimi.```" +
-        "\n```Calming (T1)-4.0% , (T2)-6% (T3)-8.0% (T4)-10% daha az tahdit oluşturursunuz.```" +
-        "\n```Elemental Ward: (T1)+1.0% , (T2)+1.5% (T3)+2.0% (T4)+2.5% Elemental (Eklement) Hasar Emilimi.```" +
-        "\n```Fire Ward: (T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Fire (Ateş) Hasar Emilimi.```" +
-        "\n```Ice Ward: (T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Ice (Buz) Hasar Emilimi.```" +
-        "\n```Lightning Ward: (T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Lightning (Elektirik) Hasar Emilimi.```" +
-        "\n```Lucky: (T1)+0.25% , (T2)+0.35% (T3)+0.45% (T4)+5.0% Sandıklardan ve canavlaran nadir eşyalar düşme şansını arttırır.```" +
-        "\n```Nature Ward: (T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Nature (Doğa) Hasar Emilimi.```" +
-        "\n```Pyhsical Ward: (T1)+1.0% , (T2)+1.5% (T3)+2.0% (T4)+2.5% Physical (Fiziksel) Hasar Emilimi.```" +
-        "\n```Slash Ward: (T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Slash Hasar Emilimi.```" +
-        "\n```Spectral Ward: (T1)+0.75% , (T2)+1.13 (T3)+1.5% (T4)+1.88% Elemental ve (T1)+0.25% , (T2)+0.38 (T3)+0.5% (T4)+0.63% Fiziksel Hasar Emilimi.```" +
-        "\n```Strike Ward: (T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Strike Hasar Emilimi.```" +
-        "\n```Thrust Ward: (T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Thrust Hasar Emilimi.```" +
-        "\n```Wilderness Ward: (T1)+0.75% , (T2)+1.13% (T3)+1.5% (T4)+1.88% Fiziksel ve (T1)0.25% , (T2)0.38% (T3)0.5 (T4)0.63% Elemental Hasar Emilimi.```");
-    }
-    if (msg.content.toLowerCase() === '!sword') {
-        msg.channel.send("```Birincil Strength Silahları" +
-        "\nSword ½ Shield:" +
-        "\nBirincil Strength çarpan oranı: 0.9X" +
-        "\nİkincil Dexterity çarpan oranı: 0.65X" +
-        "\nHasar Türü: Slash/Thrust" +
-        "\nKullanılan Bufflar: Hız," +
-        "\nKullanılan Anti-Bufflar: Yavaşlatma, Parçalama, Yereserme, Zayıflatma, Sersemletme```");
-    }
-    if (msg.content.toLowerCase() === '!great') {
-        msg.channel.send("```Birincil Strength Silahları" +
-        "\nGreat Axe:" +
-        "\nBirincil Strength çarpan oranı: 1.0X" +
-        "\nİkincil Dexterity çarpan oranı: NaN" +
-        "\nHasar Türü: Slash" +
-        "\nKullanılan Bufflar: Haste, Fortify, Grit" +
-        "\nKullanılan Anti-Bufflar: NaN```");
-    }
-    if (msg.content.toLowerCase() === '!hammer') {
-        msg.channel.send("```Birincil Strength Silahları" +
-        "\nWar Hammer:" +
-        "\nBirincil Strength çarpan oranı: 1.0X" +
-        "\nİkincil Dexterity çarpan oranı: NaN" +
-        "\nHasar Türü: Strike" +
-        "\nKullanılan Bufflar: Haste, Empower, Fortify." +
-        "\nKullanılan Anti-Bufflar: Rend, Exhaust, Stun, Weaken, Slow.```");
-    }
-    if (msg.content.toLowerCase() === '!hatchet') {
-        msg.channel.send("```Birincil Strength Silahları" +
-        "\nHatchet:" +
-        "\nBirincil Strength çarpan oranı: 0.9X" +
-        "\nİkincil Dexterity çarpan oranı: 0.65X" +
-        "\nHasar Türü: Slash" +
-        "\nKullanılan Bufflar: Empower, Fortify, Haste." +
-        "\nKullanılan Anti-Bufflar: Root, Rend, Slow, Disease, Weaken.```");
-    }
-
-
-
-
 });
 
 // client.on('message', msg =>{ //DM (Özel) mesaj yeri
@@ -234,19 +53,356 @@ client.on('message', msg => { //Kanala mesaj yeri
 //     }
 // })
 
-client.on('message', message => { //Embed Message Yazma
-    if (message.content.toLowerCase() === 'deneme'){
+client.on('message', message => { //INT EMBED
+    if (message.content.toLowerCase() === '!int'){
         const kanal = new MessageEmbed()
 
-        .setTitle('INT')
-        .setDescription('Kanal')
-        .setAuthor('Deneme Bot')
+        .setTitle('***INTELLIGENCE Özellik Bonusları***')
+        .addField('50 INT Puanı verdiğiniz zaman:', [
+            'Hafif ve Ağır Magic (Büyü) saldırlarının hasarını +10% artırır',
+            'Bitki toplarken 1 Azoth kazanma şansınızı +5% artırır.'
+        ])
+        .addField('100 INT Puanı verdiğiniz zaman:', [
+            'Critical (Kritik) vuruş hasarını +10% artırır.',
+            'Bitki toplama hızını +%10 artırır.'
+        ])
+        .addField('150 INT Puanı verdiğiniz zaman:', [
+            'Elemental hasarınızı +15% artırır.',
+            'Bitki toplarken kazandığınız malzemenin ağırlığını -10% düşürür.'
+        ])
+        .addField('200 INT Puanı verdiğiniz zaman:', [
+            'Her dodge sonrasında +10 Mana kazanırsınız.',
+            'Bitki yoplama hızını +10% artırır.'
+        ])
+        .addField('250 INT Puanı verdiğiniz zaman:', [
+            'Zamana bağlı hasar vuran büyü skillerinizin aktiflik süresini +30% artırır.',
+            'Bitki toplarken +10% fazladan materyal elde etmenizi sağlar.'
+        ])
+        .addField('300 INT Puanı verdiğiniz zaman:', [
+            'Canı 100% olan hedeflere ilk vuruşunuz +10% hasar verir.',
+            'Azoth seyahat maliyetinde -10% azalma.'
+        ])
         .setColor("RANDOM")
-        .setThumbnail('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4HdjQEocFWKFPEUl3bAWQallXc9wnYu28Yw&usqp=CAU')
-        .addField(':hearts: ', 'Video beğenmeyi unutmayın!');
+        .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/881991174922076220/unknown.png')
+        
         message.channel.send(kanal)
     }
 });
+client.on('message', message => { //DEX EMBED
+    if (message.content.toLowerCase() === '!dex'){
+        const kanal = new MessageEmbed()
+
+        .setTitle('***DEXTERITY Özellik Bonusları ***')
+        .addField('50 DEX Puanı verdiğiniz zaman:', [
+            'Hedefe +5% şans ile kritik vuruş sağlar.',
+            'Deri toplama hızını +10% artırır.'
+        ])
+        .addField('100 DEX Puanı verdiğiniz zaman:', [
+            'Thrust hasarını +5% artırır.',
+            'Deri topladıktan sonraki 3 saniye boyunca +20% hareket hız kazanırısınız.'
+        ])
+        .addField('150 DEX Puanı verdiğiniz zaman:', [
+            'Dodge (Saldırıdan Kaçınma) özelliği kullandığınızda -10 daha az stamina harcar.',
+            'Toplanan derilerin ağırlığını -10% azaltır.'
+        ])
+        .addField('200 DEX Puanı verdiğiniz zaman:', [
+            'Arkadan ve Kafadan darbelerde +10% fazla hasar meydana gelir.',
+            'Deri toplama hızını +10% artırır.'
+        ])
+        .addField('250 DEX Puanı verdiğiniz zaman:', [
+            'Sersemlemiş, yavaşlatılmış veya yerdeki düşmanlara karşı yapılan kritik saldırı hasarını +10% artırır.'
+            
+        ])
+        .addField('300 DEX Puanı verdiğiniz zaman:', [
+            'Her başarılı dodgeden sonra kesin kritik vurmannızı sağlar bu etki her 10 sn bir tekrar eder. \nKullanılan cephaneyi +15% şans ile geri kazanırınız.'
+            
+        ])
+        .setColor("RANDOM")
+        .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/881991024451416124/unknown.png')
+        
+        message.channel.send(kanal)
+    }
+});
+client.on('message', message => { //STR EMBED
+    if (message.content.toLowerCase() === '!str'){
+        const kanal = new MessageEmbed()
+
+        .setTitle('***STRENGTH Özellik Bonusları***')
+        .addField('50 STR Puanı verdiğiniz zaman:', [
+            'Mele silahlarla yapacağınız Hafif (Light) saldırılar sırasında +5% hasar artışı kazanır.',
+            'Maden toplama hızınızı +10 artar.'
+        ])
+        .addField('100 STR Puanı verdiğiniz zaman:', [
+            'Mele silahlarla yapacağınız Ağır (Heavy) saldırılar sırasında +10% hasar artışı kazanır.',
+            'Taşıma kapasitebizi +20 eklenir.'
+        ])
+        .addField('150 STR Puanı verdiğiniz zaman:', [
+            'Mele silahlarla yaptığınız saldırlar düşmanın +50% daha fazla stamina kaybetmesini sağlar.',
+            'Maden materyallerinin taşınma ağırlıklarını -10% oranında azaltır.'
+        ])
+        .addField('200 STR Puanı verdiğiniz zaman:', [
+            'Sersemlemiş, yavaşlatılmış veya yerdeki düşmanlara karşı yapılan kritik saldırı hasarını +10% artırır.',
+            'Maden toplama hızınız +10% artar.'
+        ])
+        .addField('250 STR Puanı verdiğiniz zaman:', [
+            'Mele silahlar ile yapacağınız hafif ve ağır saldırlar esnasında stamina kazancı sağlanır.',
+            'Maden toplarken +10% fazladan materyal elde etmenizi sağlar.'
+        ])
+        .addField('300 STR Puanı verdiğiniz zaman:', [
+            'Mele silahlarla yapacağınız hafif ve ağır saldırların düşman tarafından bozulmamasını sağlar.',
+            'Tüm madenleri +25% şansla tek kazma vuruşunda toplama şansı sağlar.'
+        ])
+        .setColor("RANDOM")
+        .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/881982542042005524/unknown.png')
+        
+        message.channel.send(kanal)
+    }
+});
+client.on('message', message => { //FOC EMBED
+    if (message.content.toLowerCase() === '!foc'){
+        const kanal = new MessageEmbed()
+
+        .setTitle('***FOCUS Özellik Bonusları***')
+        .addField('50 FOC Puanı verdiğiniz zaman:', [
+            'Mana yenileme oranını +10% artırır.',
+            'Balıkçılık yapaılırken orta gerginliği +10% artış sağlanır.'
+        ])
+        .addField('100 FOC Puanı verdiğiniz zaman:', [
+            'Toplam mana kapasitesi +20 artar.',
+            'Materyal parçalama (Salvage) esanasında elde edilen malzeme miktarını +10% artırır.'
+        ])
+        .addField('150 FOC Puanı verdiğiniz zaman:', [
+            'Yapılan heal oranını +20% artırır.',
+            'Balıkçılıktan elde edilen materyallerin ağırlığını -10% azaltır.'
+        ])
+        .addField('200 FOC Puanı verdiğiniz zaman:', [
+            'Verilen güçlendirme (BUFF) etkilerin süresini +20% artırır.',
+            'Balıkçılık yapaılırken orta gerginliği +10% artış sağlanır.'
+        ])
+        .addField('250 FOC Puanı verdiğiniz zaman:', [
+            'Kişisel veya grup üyelerinden herhangi biri bir düşman öldürdüğünde +30 mana kazandırır.',
+            'Yakalanan balık kazancını +10% artırır.'
+        ])
+        .addField('300 FOC Puanı verdiğiniz zaman:', [
+            'Mana sıfıra ulaştığında mana yenilenmesi 10 saniyeliğine +200% artar (60sn bekeme süresi).',
+            'Hızlı seyehat yöntemlerinden biri olan şehirdeki Han evlerine dönüş beklme süresini +10% azaltır.'
+        ])
+        .setColor("RANDOM")
+        .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/881991320929964072/unknown.png')
+        
+        message.channel.send(kanal)
+    }
+});
+client.on('message', message => { //CONS EMBED
+    if (message.content.toLowerCase() === '!cons'){
+        const kanal = new MessageEmbed()
+
+        .setTitle('***CONSTITUTION Özellik Bonusları***')
+        .addField('50 CON Puanı verdiğiniz zaman:', [
+            'Tüketilebilen bütün sağlık eşyaları etkisi +20% artar.',
+            'Odunculuk hızını +10% artırır.'
+        ])
+        .addField('100 CON Puanı verdiğiniz zaman:', [
+            'Maximum canınız fiziksel zırhınızın +10% kadar artar.',
+            'Toplayılıcılık aletlerindeki dayanıklılık +10% artırır.'
+        ])
+        .addField('150 CON Puanı verdiğiniz zaman:', [
+            'Kritik hasar alınımını karşı %10 dayanaklılık artar.',
+            'Odunculuk elde edilen malzemelerin ağırlığını -10% azaltır.'
+        ])
+        .addField('200 CON Puanı verdiğiniz zaman:', [
+            'Zırhınızı +20% artırır.',
+            'Odunculuk ağaç kesme hızınızı +10% artar.'
+        ])
+        .addField('250 CON Puanı verdiğiniz zaman:', [
+            'Canınız tamamen dolu iken aldığınız hasar +80% azaltır.',
+            'Odunculuktan elde edilen materyalleri +10% arttırır.'
+        ])
+        .addField('300 CON Puanı verdiğiniz zaman:', [
+            'Sersemleme, yavaşlatma, bağlama büyülerinin süresini %20 artırır. tek vuruşta bir ağacı kesme şansını %25 artırır.'
+        ])
+        .setColor("RANDOM")
+        .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/881991427544981514/unknown.png')
+        
+        message.channel.send(kanal)
+    }
+});
+client.on('message', message => { //SWORD EMBED
+    if (message.content.toLowerCase() === '!sword'){
+        const kanal = new MessageEmbed()
+
+        .setTitle('***Sword & Sheild***')
+        .addField('***Birincil Strength çarpan oranı:*** 0.9X', [
+        ' a '])
+        .addField('***İkincil Dexterity çarpan oranı:*** 0.65X', [
+        ' b '])
+        .addField('***Hasar Türü:*** Slash/Thrust', [
+        ' c '])
+        .addField('***Kullanılan Bufflar:*** Hız,', [
+        ' d '])
+        .addField('***Kullanılan Anti-Bufflar:*** Yavaşlatma, Parçalama, Yereserme, Zayıflatma, Sersemletme', [
+        ' f '])
+        .setColor("RANDOM")
+        .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/881993951408697404/unknown.png')
+        
+        message.channel.send(kanal)
+    }
+});
+client.on('message', message => { //GREAT AXE EMBED
+    if (message.content.toLowerCase() === '!great'){
+        const kanal = new MessageEmbed()
+
+        .setTitle('***Great Axe***')
+        .addField('***Birincil Strength çarpan oranı:*** 1.0X')
+        .addField('***İkincil Dexterity çarpan oranı:*** NaNX')
+        .addField('***Hasar Türü:*** Slash')
+        .addField('***Kullanılan Bufflar:*** Haste, Fortify, Grit')
+        .addField('***Kullanılan Anti-Bufflar:*** NaN')
+        .setColor("RANDOM")
+        .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/881994150877225060/unknown.png')
+        
+        message.channel.send(kanal)
+    }
+});
+client.on('message', message => { //WAR HAMMER EMBED
+    if (message.content.toLowerCase() === '!hammer'){
+        const kanal = new MessageEmbed()
+
+        .setTitle('***War Hammer***')
+        .addField('***Birincil Strength çarpan oranı:*** 1.0X')
+        .addField('***İkincil Dexterity çarpan oranı:*** 0.65X')
+        .addField('***Hasar Türü:*** Strike')
+        .addField('***Kullanılan Bufflar:*** Haste, Empower, Fortify.')
+        .addField('***Kullanılan Anti-Bufflar:*** Rend, Exhaust, Stun, Weaken, Slow.')
+        .setColor("RANDOM")
+        .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/881994263754330122/unknown.png')
+        
+        message.channel.send(kanal)
+    }
+});
+client.on('message', message => { //HATCHET EMBED
+    if (message.content.toLowerCase() === '!hatchet'){
+        const kanal = new MessageEmbed()
+
+        .setTitle('***Hatchet***')
+        .addField('***Birincil Strength çarpan oranı:*** 0.9X')
+        .addField('***İkincil Dexterity çarpan oranı:*** 0.65X')
+        .addField('***Hasar Türü:*** Slash')
+        .addField('***Kullanılan Bufflar:*** Empower, Fortify, Haste.')
+        .addField('***Kullanılan Anti-Bufflar:*** Root, Rend, Slow, Disease, Weaken.')
+        .setColor("RANDOM")
+        .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/881994372789469256/unknown.png')
+        
+        message.channel.send(kanal)
+    }
+});
+client.on('message', message => { //WEAPONG GEMS EMBED
+    if (message.content.toLowerCase() === '!weapongems'){
+        const kanal = new MessageEmbed()
+
+        .setTitle('***Silah Gemleri***')
+        .addField('Arboreal:', [
+            'Silahın temel hasarı veya FOCUS ta bakılarak hanfisi yüksek ise hasarın (T1)20% , (T2)30% (T3)40% (T4)50% Nature hasara dönüştürür.'
+        ])
+        .addField('Brash:', [
+            'Canı tam olan hedeflere karşı (T1)15% , (T2)20% (T3)25% (T4)30% hasar artışı sağlar.'
+        ])
+        .addField('Calming:', [
+            '(T1)-4% , (T2)-6% (T3)-8% (T4)-10% daha az tehdit oluşturursunuz.'
+        ])
+        .addField('Cruel:', [
+            'Yavaşlatılmış, sersemletilmiş veya sabitlenmiş düşmanlara karşı (T1)6% , (T2)8% (T3)10% (T4)12%.'
+        ])
+        .addField('Electrified:', [
+            'Silahın temel hasarı veya INT te bakılarak hangisi yüksek ise hasarın (T1)20% , (T2)30% (T3)40% (T4)50% Ligtning hasara dönüştürür.'
+        ])
+        .addField('Frozen:', [
+            'Silahın temel hasarı veya INTte bakılarak hangisi yüksek ise hasarın (T1)20% , (T2)30% (T3)40% (T4)50% Ice hasara dönüştürür.'
+        ])
+        .addField('Gambit:', [
+            'Staminanız dolu değilse (T1)+6% , (T2)+9% (T3)+12% (T4)+15% hasar artışı kazanırsınız.'
+        ])
+        .addField('Ignited:', [
+            'Silahın temel hasarı veya INTte bakılarak hangisi yüksek ise hasarın (T1)20% , (T2)30% (T3)40% (T4)50% FIRE hasara dönüştürür.'
+        ])
+        .addField('Lucky:', [
+            '(T1)+0.25% , (T2)+0.35% (T3)0.45% (T4)5% Sandıklardan ve canavarlardan nadir eşyalar düşme şansını artırır.'
+        ])
+        .addField('Opportunist:', [
+            'Eğer düşmanlarınızın canı %30 dan daha az ise (T1)+8% , (T2)+12% (T3)+16% (T4)200% daha fazla hasar vurmanızı sağlar.'
+        ])
+        .addField('Rally:', [
+            'Eğer canınız full ise (T1)+6% , (T2)+9% (T3)+12% (T4)+15% dostlarınızı iyileştirme artışı ve hasar artışı kazanırsınız..'
+        ])
+        .addField('Rataliate:', [
+            'Düşman tarafından 3 vuruş aldıktan sonra (T1)+6% , (T2)+9% (T3)+12% (T4)+15% oranda hasar artışı kazanırınız.'
+        ])
+        .addField('Taunt:', [
+            'Taunt aktif iken (T1)100% , (T2)200% (T3)250% (T4)300% düşmanlarınıza tehdit oluştururusnuz.'
+        ])
+        .setColor("RANDOM")
+        .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/881999140920377394/unknown.png')
+        
+        message.channel.send(kanal)
+    }
+});
+client.on('message', message => { //ARMOR GEMS EMBED
+    if (message.content.toLowerCase() === '!armorgems'){
+        const kanal = new MessageEmbed()
+
+        .setTitle('***Silah Gemleri***')
+        .addField('Abbysal Ward:', [
+            '(T1)+2.5% , (T2)+3.5% (T3)+5.0% (T4)+6.0% Void (Hiçlik) Hasarı Emilimi.'
+        ])
+        .addField('Arcane Ward:', [
+            '(T1)+2.0% , (T2)+2.5% (T3)3.0% (T4)3.75% Arcane (Gizemli) Hasarı Emilimi.'
+        ])
+        .addField('Calming:', [
+            '(T1)-4.0% , (T2)-6% (T3)-8.0% (T4)-10% daha az tahdit oluşturursunuz.'
+        ])
+        .addField('Elemental Ward:', [
+            '(T1)+1.0% , (T2)+1.5% (T3)+2.0% (T4)+2.5% Elemental (Eklement) Hasar Emilimi.'
+        ])
+        .addField('Fire Ward:', [
+            '(T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Fire (Ateş) Hasar Emilimi.'
+        ])
+        .addField('Ice ward:', [
+            '(T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Ice (Buz) Hasar Emilimi.'
+        ])
+        .addField('Lightning Ward:', [
+            '(T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Lightning (Elektirik) Hasar Emilimi.'
+        ])
+        .addField('Lucky:', [
+            '(T1)+0.25% , (T2)+0.35% (T3)+0.45% (T4)+5.0% Sandıklardan ve canavlaran nadir eşyalar düşme şansını arttırır.'
+        ])
+        .addField('Nature Ward:', [
+            '(T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Nature (Doğa) Hasar Emilimi.'
+        ])
+        .addField('Physical Ward:', [
+            '(T1)+1.0% , (T2)+1.5% (T3)+2.0% (T4)+2.5% Physical (Fiziksel) Hasar Emilimi.'
+        ])
+        .addField('Slash Ward:', [
+            '(T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Slash Hasar Emilimi.'
+        ])
+        .addField('Spectral Ward:', [
+            '(T1)+0.75% , (T2)+1.13 (T3)+1.5% (T4)+1.88% Elemental ve (T1)+0.25% , (T2)+0.38 (T3)+0.5% (T4)+0.63% Fiziksel Hasar Emilimi.'
+        ])
+        .addField('Strike Ward:', [
+            '(T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Strike Hasar Emilimi.'
+        ])
+        .addField('Thrust Ward:', [
+            '(T1)+2.0% , (T2)+2.5% (T3)+3.0% (T4)+3.75% Thrust Hasar Emilimi.'
+        ])
+        .addField('Wilderness Ward:', [
+            '(T1)+0.75% , (T2)+1.13% (T3)+1.5% (T4)+1.88% Fiziksel ve (T1)0.25% , (T2)0.38% (T3)0.5 (T4)0.63% Elemental Hasar Emilimi.'
+        ])
+        .setColor("RANDOM")
+        .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/881999140920377394/unknown.png')
+        
+        message.channel.send(kanal)
+    }
+});
+
 
 client.on('guildMemberAdd', member => {//Gelen Kullanıcı
     const girişçıkış = member.guild.channels.cache.find(channel => channel.name === 'log');     
@@ -254,13 +410,11 @@ client.on('guildMemberAdd', member => {//Gelen Kullanıcı
     member.send(`${member} GÖKTÜRK GUİLD DİSCORDUNA HOŞGELDİN`) //Gelen kullanıcaya özek mesaj atma
   
 });
-
 client.on('guildMemberRemove', member => {//Giden Kullanıcı
     const girişçıkış = member.guild.channels.cache.find(channel => channel.name === 'log');
     girişçıkış.send(`${member} Siktirip gitti Üye sayımızı ${member.guild.memberCount}`);
   
 });
-
 client.on('guildMemberAdd', member =>{ //Sesli kanala üye saysınını yazar
     try{
         const Sayac = member.guild.channels.cache.find(channel => channel.id === '708783822518354100');
@@ -270,7 +424,6 @@ client.on('guildMemberAdd', member =>{ //Sesli kanala üye saysınını yazar
         console.log(e);
     }
 });
-
 client.on('guildMemberRemove', member =>{ //Sesli kanala üye sayısını yazar
     try{
         const Sayac = member.guild.channels.cache.find(channel => channel.id === '708783822518354100');
@@ -308,7 +461,6 @@ client.on('message', message => { //Kullanıcıyı sunucudan kickleyeme yaran ko
       }
     }
 });
-
 client.on('message', message => { //Kullanıcıyı sunucudan banlamaya yarayan komut
     if (!message.guild) return;
   if (message.content.startsWith('!ban')) {
@@ -355,7 +507,7 @@ client.on("message", message => { //Kodla rol verme
 });
 
 client.on('message', message => { //oymalama açma
-    if (message.content.startsWith('oylama')){
+    if (message.content.startsWith('!oylama')){
         const args = message.content.split(' ').slice(1)
         const botmesajı = args.join(" ")
         if (!message.member.hasPermission('ADMINISTRATOR')) return message.reply('YETKİN YOK');
@@ -424,8 +576,6 @@ client.on('message', async message => { //Bota müzik çaldırma
         }
     }
 })
-
-
 
 
 client.login('ODgwMDY4MDcxMjQxNDE2NzQ1.YSY5Qw._RJlztBnx9pa9J6GVgtiyfjzBKY');
