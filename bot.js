@@ -58,6 +58,7 @@ client.on('message', message => { //INT EMBED
         const kanal = new MessageEmbed()
 
         .setTitle('***INTELLIGENCE Özellik Bonusları***')
+        .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('50 INT Puanı verdiğiniz zaman:', [
             'Hafif ve Ağır Magic (Büyü) saldırlarının hasarını +10% artırır',
             'Bitki toplarken 1 Azoth kazanma şansınızı +5% artırır.'
@@ -93,6 +94,7 @@ client.on('message', message => { //DEX EMBED
         const kanal = new MessageEmbed()
 
         .setTitle('***DEXTERITY Özellik Bonusları ***')
+        .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('50 DEX Puanı verdiğiniz zaman:', [
             'Hedefe +5% şans ile kritik vuruş sağlar.',
             'Deri toplama hızını +10% artırır.'
@@ -128,6 +130,7 @@ client.on('message', message => { //STR EMBED
         const kanal = new MessageEmbed()
 
         .setTitle('***STRENGTH Özellik Bonusları***')
+        .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('50 STR Puanı verdiğiniz zaman:', [
             'Mele silahlarla yapacağınız Hafif (Light) saldırılar sırasında +5% hasar artışı kazanır.',
             'Maden toplama hızınızı +10 artar.'
@@ -163,6 +166,7 @@ client.on('message', message => { //FOC EMBED
         const kanal = new MessageEmbed()
 
         .setTitle('***FOCUS Özellik Bonusları***')
+        .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('50 FOC Puanı verdiğiniz zaman:', [
             'Mana yenileme oranını +10% artırır.',
             'Balıkçılık yapaılırken orta gerginliği +10% artış sağlanır.'
@@ -198,6 +202,7 @@ client.on('message', message => { //CONS EMBED
         const kanal = new MessageEmbed()
 
         .setTitle('***CONSTITUTION Özellik Bonusları***')
+        .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('50 CON Puanı verdiğiniz zaman:', [
             'Tüketilebilen bütün sağlık eşyaları etkisi +20% artar.',
             'Odunculuk hızını +10% artırır.'
@@ -232,6 +237,7 @@ client.on('message', message => { //SWORD EMBED
         const kanal = new MessageEmbed()
 
         .setTitle('***Sword & Sheild***')
+        .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('***Birincil Strength çarpan oranı:*** 0.9X', [
         ' a '])
         .addField('***İkincil Dexterity çarpan oranı:*** 0.65X', [
@@ -253,6 +259,7 @@ client.on('message', message => { //GREAT AXE EMBED
         const kanal = new MessageEmbed()
 
         .setTitle('***Great Axe***')
+        .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('***Birincil Strength çarpan oranı:*** 1.0X')
         .addField('***İkincil Dexterity çarpan oranı:*** NaNX')
         .addField('***Hasar Türü:*** Slash')
@@ -269,6 +276,7 @@ client.on('message', message => { //WAR HAMMER EMBED
         const kanal = new MessageEmbed()
 
         .setTitle('***War Hammer***')
+        .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('***Birincil Strength çarpan oranı:*** 1.0X')
         .addField('***İkincil Dexterity çarpan oranı:*** 0.65X')
         .addField('***Hasar Türü:*** Strike')
@@ -285,6 +293,7 @@ client.on('message', message => { //HATCHET EMBED
         const kanal = new MessageEmbed()
 
         .setTitle('***Hatchet***')
+        .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('***Birincil Strength çarpan oranı:*** 0.9X')
         .addField('***İkincil Dexterity çarpan oranı:*** 0.65X')
         .addField('***Hasar Türü:*** Slash')
@@ -301,6 +310,7 @@ client.on('message', message => { //WEAPONG GEMS EMBED
         const kanal = new MessageEmbed()
 
         .setTitle('***Silah Gemleri***')
+        .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('Arboreal:', [
             'Silahın temel hasarı veya FOCUS ta bakılarak hanfisi yüksek ise hasarın (T1)20% , (T2)30% (T3)40% (T4)50% Nature hasara dönüştürür.'
         ])
@@ -350,7 +360,8 @@ client.on('message', message => { //ARMOR GEMS EMBED
     if (message.content.toLowerCase() === '!armorgems'){
         const kanal = new MessageEmbed()
 
-        .setTitle('***Silah Gemleri***')
+        .setTitle('***Zırh Gemleri***')
+        .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('Abbysal Ward:', [
             '(T1)+2.5% , (T2)+3.5% (T3)+5.0% (T4)+6.0% Void (Hiçlik) Hasarı Emilimi.'
         ])
@@ -576,6 +587,5 @@ client.on('message', async message => { //Bota müzik çaldırma
         }
     }
 })
-
 
 client.login('ODgwMDY4MDcxMjQxNDE2NzQ1.YSY5Qw._RJlztBnx9pa9J6GVgtiyfjzBKY');
