@@ -11,7 +11,7 @@ var prefix = isaret.prefix
 
 client.on('ready', () => {
   console.log(`Bot sunucuya giriş yaptı ${client.user.tag}!`); //Botun çalışıp çalışmadığını gördüğümüz durum
-  client.user.setActivity('!komutlar Loading %1 :)', {type: 'PLAYING'}) //Bot durumunun buradan değiştiriyoruz
+  client.user.setActivity('!komutlar Bot Loading %10 :)', {type: 'PLAYING'}) //Bot durumunun buradan değiştiriyoruz
   .then(presence => console.log(`Durum ${presence.activities[0].name} oldu.`)) //Durum değişikliğini onaylayan kısım.
   .catch(console.error);
 
