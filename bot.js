@@ -263,7 +263,7 @@ client.on('guildMemberRemove', member => {//Giden Kullanıcı
 
 client.on('guildMemberAdd', member =>{ //Sesli kanala üye saysınını yazar
     try{
-        const Sayac = member.guild.channels.cache.find(channel => channel.id === '881931554891399208');
+        const Sayac = member.guild.channels.cache.find(channel => channel.id === '708783822518354100');
         Sayac.setName(`Üye Sayısı: ${member.guild.memberCount}`);
     }
     catch (e){
@@ -273,7 +273,7 @@ client.on('guildMemberAdd', member =>{ //Sesli kanala üye saysınını yazar
 
 client.on('guildMemberRemove', member =>{ //Sesli kanala üye sayısını yazar
     try{
-        const Sayac = member.guild.channels.cache.find(channel => channel.id === '881931554891399208');
+        const Sayac = member.guild.channels.cache.find(channel => channel.id === '708783822518354100');
         Sayac.setName(`Üye Sayısı: ${member.guild.memberCount}`);
     }
     catch (e){
