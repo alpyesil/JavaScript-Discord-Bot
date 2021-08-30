@@ -18,18 +18,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => { //Kanala mesaj yeri
-    if (msg.content.toLowerCase() === prefix + 'komutlar') {
-        msg.channel.send("```!str" +
-        "\n!int" +
-        "\n!dex" +
-        "\n!cons" +
-        "\n!foc" +
-        "\n!weapongems" +
-        "\n!armorgems" +
-        "\n!sword" +
-        "\n!great" +
-        "\n!hammer" +
-        "\nhatchet```" );
+    if (msg.content.toLowerCase() === 'günaydın') {
+        msg.channel.send("Günaydınlar ❤️");
     }
 });
 
@@ -53,6 +43,35 @@ client.on('message', msg => { //Kanala mesaj yeri
 //     }
 // })
 
+client.on('message', message => { //KOMUTLAR EMBED
+    if (message.content.toLowerCase() === '!komutlar'){
+        const kanal = new MessageEmbed()
+        .setColor('RANDOM')
+	    .setTitle('New World Türkiye Botu')
+	    .setURL('https://discord.gg/QeaKR9YT9A')
+	    .setAuthor('New World Türkiye', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg', 'https://discord.gg/QeaKR9YT9A')
+	    .setDescription('Genel komutlar aşağıda listelenmiştir;')
+	    .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg')
+	    .addFields(
+		    { name: '!str', value: 'STR Puanları hakkında bilgi verir', inline: true },   
+            { name: '!int', value: 'INT Puanları hakkında bilgi verir', inline: true },
+            { name: '!dex', value: 'DEX Puanları hakkında bilgi verir', inline: true },    
+            { name: '!foc', value: 'FOC Puanları hakkında bilgi verir', inline: true },
+            { name: '!cons', value: 'CONS Puanları hakkında bilgi verir', inline: true },
+            { name: '!weapongems', value: 'Silah Gemleri hakkında bilgi verir', inline: true },
+            { name: '!armorgems', value: 'Armor Gemleri hakkında bilgi verir', inline: true },
+            { name: '!sword', value: 'Kılıc ve Kalkan hakkında bilgi verir', inline: true },  
+            { name: '!great', value: 'Great Axe hakkında bilgi verir', inline: true },  
+            { name: '!hammer', value: 'War Hammer hakkında bilgi verir', inline: true },  
+            { name: '!hatchet', value: 'Hatchet hakkında bilgi verir', inline: true },       
+	    )
+	    .setTimestamp()
+	    .setFooter('Made by Alpysl', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg');
+        
+        
+        message.channel.send(kanal)
+    }
+});
 client.on('message', message => { //INT EMBED
     if (message.content.toLowerCase() === '!int'){
         const kanal = new MessageEmbed()
