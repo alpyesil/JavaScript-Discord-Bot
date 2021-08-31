@@ -3,7 +3,7 @@ module.exports = {
     async run (client, message, args) {
         const klanbilgim  = message.content.split(' ').slice(1)
         const klan = klanbilgim.join(" ")
-        const kanal = client.channels.cache.find(ch => ch.id === '882303117251739679')
+        const kanal = client.channels.cache.find(ch => ch.id === '814502115203481618')
         kanal.send(klan + ' - ' + message.author.tag)
         message.channel.send('Klan bilgileriniz alınmıştır.')
         message.channel.send('Klan bilgilerinizi buradan sürekli güncelliyebilirsiniz.')
