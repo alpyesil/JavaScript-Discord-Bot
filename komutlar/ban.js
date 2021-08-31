@@ -19,7 +19,7 @@ module.exports = {
        member
        .ban()
        .then(() =>{
-         const kanal = message.guild.channels.cache.find(ch => ch.id === '881926547131498596')
+         const kanal = message.guild.channels.cache.find(ch => ch.id === '881918422378741770')
          const embed = new MessageEmbed()
          .setThumbnail(user.displayAvatarURL({ dynamic: true, size: 1024 }))
          .addField(member, 'sunucudan uzaklaştırıldı.')
