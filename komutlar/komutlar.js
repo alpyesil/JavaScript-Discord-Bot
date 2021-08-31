@@ -10,6 +10,7 @@ module.exports = {
 	    .setDescription('Genel komutlar aşağıda listelenmiştir;')
 	    .setThumbnail('https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg')
 	    .addFields(
+            { name: '!klan', value: 'Aktif Klanlar hakkında bilgi verir', inline: true },   
 		    { name: '!str', value: 'STR Puanları hakkında bilgi verir', inline: true },   
             { name: '!int', value: 'INT Puanları hakkında bilgi verir', inline: true },
             { name: '!dex', value: 'DEX Puanları hakkında bilgi verir', inline: true },    
