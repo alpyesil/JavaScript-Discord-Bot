@@ -81,4 +81,4 @@ client.on('guildMemberRemove', member => {//Giden Kullanıcı
   
 });
 
-client.login('ODgxOTc5MTA4NTcyMTY4MjEy.YS0tDQ.tuTTKRjeMRG2YrjBeZZRHYApP7Q')
+client.login('ODgwMDY4MDcxMjQxNDE2NzQ1.YSY5Qw._RJlztBnx9pa9J6GVgtiyfjzBKY')
