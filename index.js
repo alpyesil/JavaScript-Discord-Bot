@@ -35,7 +35,7 @@ client.on('guildCreate', async guild => {
     .addField('>Sunucunun Oluşturulma Tarihi: `'+ guild.createdAt +' `')
     .setThumbnail(guild.iconURL())
     guild.owner.send(embed1)
-    const channel = client.channels.cache.find(ch => ch.id === '881926547131498596')
+    const channel = client.channels.cache.find(ch => ch.id === '814502115203481618')
     channel.send(embed2)
 
 })
@@ -59,14 +59,14 @@ client.on('guildDelete', async guild => {
     .addField('>Sunucunun Oluşturulma Tarihi: `'+ guild.createdAt +' `')
     .setThumbnail(guild.iconURL())
     guild.owner.send(embed1)
-    const channel = client.channels.cache.find(ch => ch.id === '881926547131498596')
+    const channel = client.channels.cache.find(ch => ch.id === '814502115203481618')
     channel.send(embed2)
 
 })
 
 
 client.on('ready', () => {
-    client.user.setActivity('!komutlar Bot Loading %10 :)')
+    client.user.setActivity('!komutlar Bot Loading %15 :)')
     console.log('Botumuz Aktif')
 });
 client.on("message", async message => {
