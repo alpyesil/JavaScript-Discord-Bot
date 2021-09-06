@@ -71,7 +71,7 @@ client.on("message", message => {
 
 
 client.on('ready', () => {
-    client.user.setActivity('!komutlar Bot Loading %10 :)')
+    client.user.setActivity('!komutlar Bot Loading %17 :)')
     console.log('Botumuz Aktif')
 });
 client.on("message", async message => {
