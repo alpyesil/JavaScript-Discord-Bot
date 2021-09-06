@@ -3,7 +3,7 @@ module.exports = {
     async run (client, message, args) {
         const Discord = require('discord.js')
         const embed = new Discord.MessageEmbed()
-        .setTitle('***Sword & Sheild***')
+        .setTitle('***Sword & Shield***')
         .setURL("https://discord.gg/QeaKR9YT9A")
         .addField('***Birincil Strength çarpan oranı:*** 0.9X', [
         ' a '])
