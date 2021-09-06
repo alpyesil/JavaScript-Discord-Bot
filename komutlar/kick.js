@@ -11,7 +11,7 @@ module.exports = {
       const embed = new MessageEmbed()
       .setDescription('Yetkin YOK!!!')
       .setColor('RANDOM')
-      .setFooter('Made by Alpysl', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg'); 
+      .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
       message.channel.send(embed)
       return;
   }
@@ -19,19 +19,19 @@ module.exports = {
        member
        .kick('Optional reason')
        .then(() =>{
-         const kanal = message.guild.channels.cache.find(ch => ch.id === '881918422378741770')
+         const kanal = message.guild.channels.cache.find(ch => ch.id === '881926547131498596')
          const embed = new MessageEmbed()
          .setThumbnail(user.displayAvatarURL({ dynamic: true, size: 1024 }))
+         .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
          .addField(member, 'sunucudan kicklendi')
          .addField('Üye', member)        
          .setColor('RANDOM')
-         .setFooter('Made by Alpysl', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg'); 
          message.channel.send(embed)
        })
        .catch(err => {
          const embed = new MessageEmbed()
+         .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
          .setDescription('Kickleme başarısız!!')
-         .setFooter('Made by Alpysl', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg');  
          message.channel.send(embed)
 
 
@@ -41,15 +41,15 @@ module.exports = {
      }else{
       const embed = new MessageEmbed()
       .setColor('RANDOM')
+      .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
       .setDescription('Böyle bir kişi yok')
-      .setFooter('Made by Alpysl', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg');  
       message.channel.send(embed)
      }
    } else{
      const embed = new MessageEmbed()
      .setColor('RANDOM')
+     .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
      .setDescription('Kiclenecek kişiyi seçmedin')
-     .setFooter('Made by Alpysl', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg');  
      message.channel.send(embed)
    } 
 

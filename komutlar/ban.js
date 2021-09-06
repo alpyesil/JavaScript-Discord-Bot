@@ -11,7 +11,7 @@ module.exports = {
       const embed = new MessageEmbed()
       .setDescription('Yetkin YOK!!!')
       .setColor('RANDOM')
-      .setFooter('Made by Alpysl', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg'); 
+      .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
       message.channel.send(embed)
       return;
   }
@@ -19,19 +19,19 @@ module.exports = {
        member
        .ban()
        .then(() =>{
-         const kanal = message.guild.channels.cache.find(ch => ch.id === '881918422378741770')
+         const kanal = message.guild.channels.cache.find(ch => ch.id === '881926547131498596')
          const embed = new MessageEmbed()
          .setThumbnail(user.displayAvatarURL({ dynamic: true, size: 1024 }))
          .addField(member, 'sunucudan uzaklaştırıldı.')
          .addField('Üye', member)        
          .setColor('RANDOM')
-         .setFooter('Made by Alpysl', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg'); 
+         .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
          message.channel.send(embed)
        })
        .catch(err => {
          const embed = new MessageEmbed()
          .setDescription('Kickleme başarısız!!')
-         .setFooter('Made by Alpysl', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg');  
+         .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
          message.channel.send(embed)
 
 
@@ -42,14 +42,14 @@ module.exports = {
       const embed = new MessageEmbed()
       .setColor('RANDOM')
       .setDescription('Böyle bir kişi yok')
-      .setFooter('Made by Alpysl', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg');  
+      .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
       message.channel.send(embed)
      }
    } else{
      const embed = new MessageEmbed()
      .setColor('RANDOM')
      .setDescription('Banlanacak kişiyi seçmedin')
-     .setFooter('Made by Alpysl', 'https://cdn.discordapp.com/attachments/856268503580540983/882005172719607848/vBwCWL8W.jpg');  
+     .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
      message.channel.send(embed)
    } 
 
