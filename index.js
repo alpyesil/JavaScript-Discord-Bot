@@ -114,36 +114,6 @@ client.on('message', message => { //oymalama açma
     }
 });
 
-client.on('guildMemberAdd', member =>{ //Sesli kanala üye saysınını yazar
-    try{
-        const Sayac = member.guild.channels.cache.find(channel => channel.id === '708783822518354100');
-        Sayac.setName(`Üye Sayısı: ${member.guild.memberCount}`);
-    }
-    catch (e){
-        console.log(e);
-    }
-});
-
-client.on('guildMemberRemove', member =>{ //Sesli kanala üye sayısını yazar
-    try{
-        const Sayac = member.guild.channels.cache.find(channel => channel.id === '708783822518354100');
-        Sayac.setName(`Üye Sayısı: ${member.guild.memberCount}`);
-    }
-    catch (e){
-        console.log(e);
-    }
-});
-
-client.on("guildMemberAdd", member => { //Kullanıcıya otamatik rol verme kodu
-    try {
-    let role = member.guild.roles.cache.find(role => role.name === 'Misafir')
-    member.roles.add(role);
-  } catch(e) {
-    console.log(e)
-  }
-});
-
-
 client.on('guildMemberAdd', member => {//Gelen Kullanıcı
     const girişçıkış = member.guild.channels.cache.find(channel => channel.name === 'log');     
     girişçıkış.send(`${member} Sucunumuza katıldı. Üye sayımızı ${member.guild.memberCount}`);
