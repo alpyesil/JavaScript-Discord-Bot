@@ -96,6 +96,24 @@ client.on("message", async message => {
     }
 })
 
+client.on('message', message => { //oymalama açma
+    if (message.content.startsWith('!oylama')){
+        const args = message.content.split(' ').slice(1)
+        const botmesajı = args.join(" ")
+        if (!message.member.hasPermission('ADMINISTRATOR')) return message.reply('YETKİN YOK');
+        if (!botmesajı) return message.reply('Oylamanın ne olacağını yazmadınız.');
+        message.delete(message.author)
+        const embed = new MessageEmbed()
+        .setTitle('New World Oylama')
+        .setDescription(botmesajı)
+        .setFooter(message.author.tag, message.author.displayAvatarURL({ dynamic: true })) 
+        message.channel.send({ embed: embed}).then( embedMessage =>{
+            embedMessage.react("✔️")
+            embedMessage.react("❌")
+        })
+    }
+});
+
 client.on('guildMemberAdd', member =>{ //Sesli kanala üye saysınını yazar
     try{
         const Sayac = member.guild.channels.cache.find(channel => channel.id === '708783822518354100');
