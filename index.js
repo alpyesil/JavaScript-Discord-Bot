@@ -4,9 +4,9 @@ const { MessageEmbed } = require('discord.js'); //embed mesaage discord.js den �
 const client = new Discord.Client() // client tanımalamsı
 const { readdirSync } = require('fs'); // tanımlamalar
 const { join } = require('path'); // tanımlamalar
-const mongoose = require('mongoose');
-const dotenv = require("dotenv");
-require("dotenv").config();
+//const mongoose = require('mongoose');
+//const dotenv = require("dotenv");
+//require("dotenv").config();
 
 client.commands= new Discord.Collection(); // komutları alıyoruz
 
@@ -140,20 +140,20 @@ client.on('message', message =>{ //Bir kanalda duyuru yapma
     }
 });
 
-mongoose
-  .connect(process.env.MONGODB_SRV, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    retryWrites: true,
+//mongoose
+  //.connect(process.env.MONGODB_SRV, {
+   //useNewUrlParser: true,
+    //useUnifiedTopology: true,
+    //retryWrites: true,
 
-  })
-  .then(()=>{
-    console.log('Database Bağlantı Başarılı');
-  })
-  .catch((err) =>{
-    console.log(err);
-  });
-  mongoose.Promise = global.Promise
+  //})
+  //.then(()=>{
+    //console.log('Database Bağlantı Başarılı');
+  //})
+  //.catch((err) =>{
+    //console.log(err);
+  //});
+  //mongoose.Promise = global.Promise
 
 
 client.login('ODgwMDY4MDcxMjQxNDE2NzQ1.YSY5Qw._RJlztBnx9pa9J6GVgtiyfjzBKY')
