@@ -117,7 +117,7 @@ client.on('message', message => { //oymalama açma
 client.on('guildMemberAdd', member => {//Gelen Kullanıcı
     const girişçıkış = member.guild.channels.cache.find(channel => channel.name === 'log');     
     girişçıkış.send(`${member} Sucunumuza katıldı. Üye sayımızı ${member.guild.memberCount}`);
-    member.send(`${member} GÖKTÜRK GUİLD DİSCORDUNA HOŞGELDİN`) //Gelen kullanıcaya özek mesaj atma
+    //member.send(`${member} GÖKTÜRK GUİLD DİSCORDUNA HOŞGELDİN`) //Gelen kullanıcaya özek mesaj atma
   
 });
 client.on('guildMemberRemove', member => {//Giden Kullanıcı
