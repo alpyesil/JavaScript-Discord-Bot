@@ -1,5 +1,5 @@
 module.exports = {
-    kod: "conx",
+    kod: "cons",
     async run (client, message, args) {
         const Discord = require('discord.js')
         const embed = new Discord.MessageEmbed()
