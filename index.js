@@ -144,4 +144,4 @@ client.on('message', message =>{ //Bir kanalda duyuru yapma
   //mongoose.Promise = global.Promise
 
 
-client.login('ODgwMDY4MDcxMjQxNDE2NzQ1.YSY5Qw._RJlztBnx9pa9J6GVgtiyfjzBKY')
+client.login('ODgwMDY4MDcxMjQxNDE2NzQ1.YSY5Qw.jnDWSim9iEh5Hk5tcyfZFoKyHb8')
