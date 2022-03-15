@@ -607,4 +607,4 @@ client.on('message', async message => { //Bota müzik çaldırma
     }
 })
 
-client.login('ODgwMDY4MDcxMjQxNDE2NzQ1.YSY5Qw._RJlztBnx9pa9J6GVgtiyfjzBKY');
+client.login('YOURCODE');
