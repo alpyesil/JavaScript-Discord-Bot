@@ -4,12 +4,12 @@
 ## Install
 First, clone the repository into your local workspace:
 ```
-    git clone https://github.com/discord.git
+    git clone https://github.com/alpyesil/JavaScript-Discord-Bot.git
 ```
 
 Then, navigate into the project directory:
 ```
-    Opent With Visual Studio Com. => AspNetMvcSocial.sln
+    Opent With Visual Studio Code. => JavaScript-Discord-Bot
 ```
 
 ## Screenshots
